@@ -12,3 +12,8 @@
   padding: 20px 0;
   font-size: 30px;
 }
+
+.description-input{
+  height: 70px;
+  width: 200px;
+}

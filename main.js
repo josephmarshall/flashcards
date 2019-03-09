@@ -16,8 +16,31 @@ $(document).ready ( function () {
     $(description).css("visibility", vis)
   })
 
+var newCard = 1
+
   $(".edit").on("click", function(){
-    $(this.parentElement).html("<div class='flash_card'><p class='title'>Tit</p><hr /><p class='description'>Descrip</p><button class='edit'>Edit</button><button id='delete'>Delete</button></div>")
+    $(this.parentElement).html(
+      "<form id='card-form'" +
+      "id='newCard'" + newCard +
+      ">Front: " +
+      "<input type='text' id='new-card-title' name='ftitle'>" +
+      "<br>Back: " +
+      "<input class='description-input' id='new-card-description' type='text' name='fdescription'>" +
+      "<br><br>" +
+      "<input type='button'"+
+      "onClick='newCard()'" +
+      "value='Submit'>" +
+      "</form>"
+      )
   })
-  
+
+
 })
+
+function newCard() {
+  let title = document.getElementsByName("ftitle")[0].value
+  let description = document.getElementsByName("fdescription")[0].value
+  let parent = document.getElementById("card-form").parentElement
+  parent.innerHTML = ("<h1>" + title + "</h1><p>" + description + "</p>")
+}
+
