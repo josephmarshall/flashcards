@@ -1,19 +1,48 @@
-.grid-container {
+*{
+  font-family: 'Trebuchet MS';
+ }
+ 
+ body{
+  background-color: rgba(210, 180, 140, 0.418);
+ }
+ 
+ 
+ 
+ .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
-  background-color: #2196F3;
   padding: 10px;
-}
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+ }
+ 
+ .grid-container > div {
+  background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
-}
-
-.description-input{
+ }
+ 
+ .description-input{
   height: 70px;
-  width: 200px;
-}
+  width: 80%;
+ }
+ 
+ .flash-card{
+  border-radius: 10px;
+  margin: 10px;
+ }
+ 
+ #new-card-title{
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+ }
+ 
+ #new-card-description{
+  width: 90%;
+  height: 90px;
+  padding: 5px;
+  text-align: left;
+ 
+ }
