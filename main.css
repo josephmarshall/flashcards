@@ -6,8 +6,34 @@
   background-color: rgba(210, 180, 140, 0.418);
  }
  
+ button{
+   font-size: 0.7em;
+ }
  
- 
+ #create{
+   font-style: bold;
+   font-size: 4em;
+   margin-left: 20px;
+   border-radius: 80px;
+   width: 100px;
+   height: 100px;
+   text-align: center;
+   margin-right: 20px;
+   padding: 0;
+   border: solid 8px rgba(47, 74, 148, 0.644);
+ }
+
+ #create-button-container{
+   display: flex;
+   flex-direction: row-reverse;
+   width: 100vw;
+ }
+
+ button:hover{
+   color: white;
+   background: rgba(47, 74, 148, 0.644);
+ }
+
  .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -25,24 +51,40 @@
  .description-input{
   height: 70px;
   width: 80%;
+  padding: 10px;
  }
  
  .flash-card{
-  border-radius: 10px;
+  border-radius: 0px;
   margin: 10px;
+  border: solid 8px white;
  }
- 
+ .flash-card:hover{
+  border: solid 8px rgba(47, 74, 148, 0.644)
+ }
+
+ #topbar{
+   width: 100vw;
+   background: rgba(47, 74, 148, 0.644);
+   font-size: 2.5em;
+   color: white;
+   margin: 0;
+   padding: 15px;
+ }
+
  #new-card-title{
   width: 80%;
   height: 100%;
   padding: 20px;
   text-align: center;
+  font-size: 1em
  }
  
  #new-card-description{
-  width: 90%;
+  width: 95%;
   height: 90px;
   padding: 5px;
-  text-align: left;
+  text-align: center;
+  font-size: 1em;
  
  }

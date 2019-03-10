@@ -63,8 +63,8 @@ function newCard() {
 
 function addNewCard() {
  let firstCard = document.getElementsByClassName("grid-container")[0]
- let title = "New Card"
- let description = "New Description"
+ let title = ""
+ let description = ""
  $(firstCard).prepend(
    "<div class='flash-card'>"+
    "<form id='card-form'>" +
